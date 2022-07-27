@@ -1,0 +1,49 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "green green green" "yellow red blue" "yellow red blue"
+    "orange orange blue";
+}
+
+#green {
+  grid-area: green;
+}
+
+#yellow {
+  grid-area: yellow;
+}
+
+#red {
+  grid-area: red;
+}
+
+#blue {
+  grid-area: blue;
+}
+
+#orange {
+  grid-area: orange;
+}
+
+.special {
+  display: grid;
+  grid-template-areas:
+    "first second"
+    "third fourth";
+}
+
+.special li:nth-child(1) {
+  grid-area: first;
+}
+
+.special li:nth-child(2) {
+  grid-area: second;
+}
+
+.special li:nth-child(3) {
+  grid-area: third;
+}
+
+.special li:nth-child(4) {
+  grid-area: fourth;
+}
